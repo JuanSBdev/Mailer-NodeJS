@@ -6,8 +6,8 @@ const {EMAIL, API_KEY} = process.env;
 
 const transporter = nodemailer.createTransport({
   host: "smtp.gmail.com",
-  port: 465,
-  secure: true,
+  port: 587,
+  secure: false,
   service: 'Gmail',
   auth: {
     user: EMAIL,
